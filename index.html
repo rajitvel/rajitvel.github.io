@@ -110,7 +110,32 @@
             align-items: center;
         }
 
-        /* Responsive adjustments */
+        .club-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .club-gallery img {
+            width: 210px;      
+            height: 210px;     
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            background: #ede9fe;
+            transition: transform 0.2s;
+        }
+        .club-gallery img:hover {
+            transform: scale(1.07);
+        }
+        @media (max-width: 600px) {
+            .club-gallery img {
+                width: 180px;   
+                height: 180px;
+            }
+        }
+
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -161,11 +186,12 @@
             <p>
                 I am passionate about social entrepreneurship and believe in the power of innovation to address societal challenges. 
                 My goal is to leverage my skills and knowledge to create meaningful change in the world. 
-                <br>
-                <blockquote>
-                    "Endeavour, thus rise - like tides, drawn ever onward."
-                </blockquote>
             </p>
+            <div style="display: flex; justify-content: center;">
+                <blockquote style="color: #6d28d9; font-style: italic; font-weight: bold; text-align: center; max-width: 500px;">
+                    “Endeavour, thus rise - like tides, drawn ever onward.”
+                </blockquote>
+            </div>
         </section>
 
         <section id="skills">
@@ -231,13 +257,11 @@
                 <li><strong>SRIHER Theatre Club (2022-25)</strong>: Active participant. Took part in many of drama, skits, shortfilm.</li>
             </ul>
 
-            <div>
-                <div>
-                    <img src="assets/Club_img1.jpg">
-                    <img src="assets/MlClub2.jpeg">
-                    <img src="assets/TheatreClub1.jpeg">
-                    <img src="assets/TheatreClub2.jpeg">
-                </div>
+            <div class="club-gallery">
+                <img src="assets/Club_img1.jpg" alt="Club Activity 1">
+                <img src="assets/TheatreClub1.jpeg" alt="Theatre Club 1">
+                <img src="assets/MlClub2.jpeg" alt="ML Club Activity">
+                <img src="assets/TheatreClub2.jpeg" alt="Theatre Club 2">
             </div>
         </section>
     </main>
