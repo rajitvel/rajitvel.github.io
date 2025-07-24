@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajitvel Portfolio</title>
+    <!-- Tailwind CSS CDN for simple styling -->
+    <script src="assets/https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to give it a "student" feel */
+        body {
+            font-family: 'Inter', sans-serif; /* A common, clean font */
+            background-color: #f0f9ff; /* Light blue background */
+            color: #333; /* Darker text */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #a78bfa; /* Purple header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom-left-radius: 15px; /* Rounded corners for header */
+            border-bottom-right-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #e0e7ff; /* Lighter purple on hover */
+        }
+        section {
+            background-color: #ffffff; /* White background for sections */
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px; /* Rounded corners for sections */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2 {
+            color: #6d28d9; /* Darker purple for headings */
+            margin-bottom: 15px;
+        }
+        .project-card {
+            background-color: #ede9fe; /* Lightest purple for project cards */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .project-card h3 {
+            color: #5b21b6; /* Even darker purple for project titles */
+            margin-bottom: 10px;
+        }
+        .skill-item {
+            background-color: #d8b4fe; /* Medium purple for skill badges */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #a78bfa; /* Purple footer */
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            .container {
+                padding: 10px;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-4xl font-extrabold mb-2" style="color: #ede9fe; text-shadow: 1px 1px 4px #5b21b6;">Hi, I'm Rajitvel Perumal D</h1>
+            <p class="text-lg">Student | Budding Social Entrepreneur & Speaker | Amateur Actor</p>
+            <nav class="mt-4 flex justify-center flex-wrap gap-4">
+                <a href="#about">About Me</a>
+                <a href="#skills">My Skills</a>
+                <a href="#projects">My Projects</a>
+                <a href="#clubs">Club Activities</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p>
+                As an aspiring undergraduate student, I am committed to making a positive impact on society. 
+                I am an avid learner and actively pursue subjects that align with my interests and aspirations.
+            </p>
+            <img src="assets/Rajitvel_image.jpg" alt="Rajitvel's Photo" class="mt-4 rounded-full w-32 h-32 mx-auto shadow-lg border-4 border-white object-cover">
+            <p class="mt-4">
+                Beyond my academic pursuits, I thrive on exploring unconventional avenues. 
+                Consequently, I actively participate in various co-curricular activities, including drama, short film production, public speaking, content creation, and mapworks.
+            </p>
+
+            <p class="mt-4">
+                I am passionate about social entrepreneurship and believe in the power of innovation to address societal challenges. 
+                My goal is to leverage my skills and knowledge to create meaningful change in the world. 
+                <br>
+                <blockquote class="italic text-lg text-purple-700 border-l-4 border-purple-300 pl-4 mt-4">
+                    "Endeavour, thus rise - like tides, drawn ever onward."
+                </blockquote>
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 class="text-3xl font-bold">My Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-item">Machine Learning</span>
+                <span class="skill-item">Deep Learning</span>
+                <span class="skill-item">Data Analysis</span>
+                <span class="skill-item">Python Programming</span>
+                <span class="skill-item">Digital Art</span>
+                <span class="skill-item">Public Speaking</span>
+                <span class="skill-item">Problem Solving</span>
+                <span class="skill-item">Leadership</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="text-3xl font-bold">My Projects</h2>
+
+            <div class="project-card">
+                <h3 class="text-xl font-semibold">Assessing Soil Moisture from Satellite Data</h3>
+                <p>
+                    The project completed during the internship was done in the field of Image
+                    processing & Deep Learning which involved in working on satellite observation
+                    – data processing domain, where GridMET and SMAP datasets were
+                    processed to generate images and build a predictive CNN model using
+                    ResNet-18 in PyTorch.
+
+                </p>
+                <p class="text-sm text-gray-600 mt-2">Technologies used: Python, PyTorch, ResNet-18, GridMET, SMAP</p>
+            </div>
+
+            <div class="project-card">
+                <h3 class="text-xl font-semibold">Explorational Analysis of Political Spectrum from News Articles</h3>
+                <p>
+                    The core idea of this project is to the explore basics of Machine Learning along
+                    with working on a dataset based on political reports and its respective bias,
+                    collected from various reputed press, to examine and explore the accuracy of
+                    the prediction made through applying the dataset in a classifier model.
+                </p>
+                <p class="text-sm text-gray-600 mt-2">Technologies used: Python, Machine Learning, Data Analysis, Text Classification</p>
+            </div>
+
+            <div class="project-card">
+                <h3 class="text-xl font-semibold">Apartment Management System</h3>
+                <p>
+                    Worked with a budding team sed on addressing the need for building an
+                    application which manages the workload for a facility manager role in an
+                    apartment complex.
+                </p>
+                <p class="text-sm text-gray-600 mt-2">Technologies used: Web Development</p>
+            </div>
+        </section>
+
+        <section id="clubs">
+            <h2 class="text-3xl font-bold">Club Activities & Participation</h2>
+            <p>
+                I actively participate in various clubs and student organizations at my college. These experiences have helped me develop leadership, teamwork, and organizational skills.
+            </p>
+            <ul class="list-disc list-inside mt-4 space-y-4">
+                <li><strong>SRET Machine Learning Club (2024-25)</strong>: Head and Secretary of the Club.</li>
+                <li><strong>SRET Machine Learning Club (2022-24)</strong>: Junior Student Coordinator. Helped senior organizers for club events. Played a key role in establishing unified platform to store club records digitally.</li>
+                <li><strong>SRIHER Theatre Club (2022-25)</strong>: Active participant. Took part in many of drama, skits, shortfilm.</li>
+            </ul>
+
+            <div class="mt-6">
+                <div class="flex flex-wrap gap-4">
+                    <img src="assets/Club_img1.jpg" class="w-56 h-56 object-cover rounded-xl shadow-lg border-4 border-white">
+                    <img src="assets/MlClub2.jpeg" class="w-56 h-56 object-cover rounded-xl shadow-lg border-4 border-white">
+                    <img src="assets/TheatreClub1.jpeg" class="w-56 h-56 object-cover rounded-xl shadow-lg border-4 border-white">
+                    <img src="assets/TheatreClub2.jpeg" class="w-56 h-56 object-cover rounded-xl shadow-lg border-4 border-white">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rajitvel Perumal D. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
