@@ -84,11 +84,19 @@
         }
 
         img {
-            max-width: 12rem;
-            max-height: 12rem;
+            max-width: 100%;
+        }
+
+        .navbar-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .avatar {
+            max-width: 12rem;
+            max-height: 12rem;
             border-radius: 50%;
             object-fit: cover;
             aspect-ratio: 1 / 1;
@@ -127,12 +135,14 @@
         <div class="container">
             <h1 class="text-4xl font-extrabold mb-2" style="color: #ede9fe; text-shadow: 1px 1px 4px #5b21b6;">Hi, I'm Rajitvel Perumal D</h1>
             <p class="text-lg">Student | Budding Social Entrepreneur & Speaker | Amateur Actor</p>
-            <nav class="mt-4 flex justify-center flex-wrap gap-4">
-                <a href="#about">About Me</a>
-                <a href="#skills">My Skills</a>
-                <a href="#projects">My Projects</a>
-                <a href="#clubs">Club Activities</a>
-            </nav>
+            <div class="navbar-container">
+                <nav class="mt-4 flex justify-center flex-wrap gap-4">
+                    <a href="#about">About Me</a>
+                    <a href="#skills">My Skills</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#clubs">Club Activities</a>
+                </nav>
+            </div>
         </div>
     </header>
 
