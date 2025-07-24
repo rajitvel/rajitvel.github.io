@@ -83,6 +83,28 @@
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        img {
+            max-width: 12rem;
+            max-height: 12rem;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             nav {
@@ -121,7 +143,9 @@
                 As an aspiring undergraduate student, I am committed to making a positive impact on society. 
                 I am an avid learner and actively pursue subjects that align with my interests and aspirations.
             </p>
-            <img src="assets/Rajitvel_image.jpg" alt="Rajitvel's Photo" class="mt-4 rounded-full w-32 h-32 mx-auto shadow-lg border-4 border-white object-cover">
+            <div class="avatar-container">
+                <img src="assets/Rajitvel_image.jpg" alt="Rajitvel's Photo" class="mt-4 rounded-full mx-auto shadow-lg border-4 border-white object-cover avatar">
+            </div>
             <p class="mt-4">
                 Beyond my academic pursuits, I thrive on exploring unconventional avenues. 
                 Consequently, I actively participate in various co-curricular activities, including drama, short film production, public speaking, content creation, and mapworks.
